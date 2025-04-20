@@ -52,7 +52,6 @@ def VictoryFor(board):
     # el jugador que utiliza las 'O's o las 'X's ha ganado el juego.
     # Existen cuatro posibles veredictos:
     # el juego continua, el juego termina en empate, tu ganas, o la maquina gana.
-    # pide entregar (board, sign) pero ignoro a qué se refiere con sign
 
     linea = False
     complete_board = True
@@ -164,18 +163,3 @@ while not game_over and MakeListOfFreeFields(board) != []: # continua juego
     
 else:
     print('\nFin del juego')
-
-
-'''
-players_data = [
-    {"name": "Patrick Mahomes", "position": "Quarterback", "jersey_number": 15, "yards_gained": 400, "touchdowns": 3},
-    {"name": "Tyreek Hill", "position": "Wide Receiver", "jersey_number": 10, "yards_gained": 150, "touchdowns": 2},
-    # Add more players as needed
-]
-names = [player["name"] for player in players_data]
-print("Players Names:", names)
-
-# Task 2: Analyze Player Positions
-positions = [player["position"] for player in players_data]
-print("Player Positions:", positions)
-'''
